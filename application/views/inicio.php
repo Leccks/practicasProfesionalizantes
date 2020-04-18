@@ -19,29 +19,42 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 			flex-direction: column;
 			align-items: center;
 			justify-content: center;
-			font-family: Verdana;
 			height: 100%;
 			width: 100%;
 			font-size: 2.5vw;
 		}
 		.cont1{
+			width: 100%;
+			height: 90%;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+		}
+		.cont2{
+			margin: 2%;
 			background-color: darkgrey;
 			width: 70%;
-			height: 50%;
+			height: 25%;
 			display: flex;
 			flex-direction: row;
 			flex-wrap: wrap;
 		}
 		.productCont{
 			background-color: lightgray;
-			width: 12.28%;
-			height: 35%;
+			width: 13.15%;
+			height: 87%;
 			display: flex;
 			flex-direction: column;
 			align-items: center;
 			justify-content: space-around;
 			font-size: 1vw;
-			margin: 1%;
+			margin: 1% 0 0 1%;
+		}
+		.productCont:hover{
+			-webkit-box-shadow: 0px 0px 18px 3px rgba(0,0,0,0.75);
+			-moz-box-shadow: 0px 0px 18px 3px rgba(0,0,0,0.75);
+			box-shadow: 0px 0px 18px 3px rgba(0,0,0,0.75);
 		}
 		.productPhoto{
 			background-color: black;
@@ -61,13 +74,53 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		</style>
 </head>
 <body>
-	<div class="carousel"></div>
 	<div class="cont1">
-		<div class="productCont">
-			<div class="productPhoto"></div>
-			<hr class="productHr"></hr>
-			<a>Nombre Product</a>
-			<a>$000</a>
+		<div class="carousel"></div>
+			<div class="cont2">
+				<div class="productCont">
+					<div class="productPhoto"></div>
+					<hr class="productHr"></hr>
+					<a>Nombre Product</a>
+					<a>$000</a>
+				</div>
+				<div class="productCont">
+					<div class="productPhoto"></div>
+					<hr class="productHr"></hr>
+					<a>Nombre Product</a>
+					<a>$000</a>
+				</div>
+				<div class="productCont">
+					<div class="productPhoto"></div>
+					<hr class="productHr"></hr>
+					<a>Nombre Product</a>
+					<a>$000</a>
+				</div>
+				<div class="productCont">
+					<div class="productPhoto"></div>
+					<hr class="productHr"></hr>
+					<a>Nombre Product</a>
+					<a>$000</a>
+				</div>
+				<div class="productCont">
+					<div class="productPhoto"></div>
+					<hr class="productHr"></hr>
+					<a>Nombre Product</a>
+					<a>$000</a>
+				</div>
+				<div class="productCont">
+					<div class="productPhoto"></div>
+					<hr class="productHr"></hr>
+					<a>Nombre Product</a>
+					<a>$000</a>
+				</div>
+				<div class="productCont">
+					<div class="productPhoto"></div>
+					<hr class="productHr"></hr>
+					<a>Nombre Product</a>
+					<a>$000</a>
+				</div>
+				
+			</div>
 		</div>
 	</div>
 </body>

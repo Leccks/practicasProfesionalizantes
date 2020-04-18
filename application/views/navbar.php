@@ -31,7 +31,7 @@
         height: 100%;
     }
     .dirrow{
-        flex_direction: row;
+        flex-direction: row;
     }
 </style>
 <navbar class="dflex w100 h10 dirrow lightgrey">
