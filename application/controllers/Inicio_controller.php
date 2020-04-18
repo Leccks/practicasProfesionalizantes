@@ -34,10 +34,4 @@ class Inicio_controller extends CI_Controller {
 		$this->load->view('login.css');
 	}
 
-		
-
-	
-
-
-
 }
