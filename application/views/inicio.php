@@ -61,7 +61,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		</style>
 </head>
 <body>
-	<div class="carousel"><?php echo $url[1]['url']; ?></div>
+	<div class="carousel"></div>
 	<div class="cont1">
 		<div class="productCont">
 			<div class="productPhoto"></div>
