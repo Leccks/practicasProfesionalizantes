@@ -8,7 +8,7 @@ function url(){
         ),
         array(
             'title' => 'Login_controller',
-            'url' => base_url('index.php/Login_controller.php'), 
+            'url' => base_url('index.php/Login_controller'), 
         ),
     );
 }
