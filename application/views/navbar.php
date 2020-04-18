@@ -1,4 +1,10 @@
 <style>
+    navbar{
+        font-size: 1vw;
+    }
+    button{
+        font-size: 0.7vw;
+    }
     .lightgrey{
         background-color: lightgrey;
     }
