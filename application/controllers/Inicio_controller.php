@@ -27,7 +27,7 @@ class Inicio_controller extends CI_Controller {
 	public function index(){	
 		$data['url'] = url();
 		$this->load->view('navbar',$data);
-		$this->load->view('inicio',$data);
+		$this->load->view('inicio');
 	}
 
 	public function style(){
