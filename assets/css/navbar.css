@@ -1,0 +1,28 @@
+.lightgrey{
+    background-color: lightgrey;
+}
+.center{
+    align-items: center;
+    justify-content: center;
+}
+.dflex{
+    display: flex;
+}
+.w100{
+    width: 100%;
+}
+.w10{
+    width: 10%;
+}
+.w2666{
+    width: 26.66%;
+}
+.h10{
+    height: 10%;
+}
+.h100{
+    height: 100%;
+}
+.dirrow{
+    flex-direction: row;
+}
