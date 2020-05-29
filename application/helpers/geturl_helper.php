@@ -10,5 +10,9 @@ function url(){
             'title' => 'Login_controller',
             'url' => base_url('index.php/Login_controller'), 
         ),
+        array(
+            'title' => 'Productos_controller',
+            'url' => base_url('index.php/Productos_controller'), 
+        ),
     );
 }

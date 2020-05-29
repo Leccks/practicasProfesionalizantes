@@ -1,4 +1,5 @@
 <?php
+include("db.php");
 defined('BASEPATH') OR exit('No direct script access allowed');
 include("db.php");
 ?>
@@ -121,13 +122,7 @@ include("db.php");
 					<hr class="productHr"></hr>
 					<a>Nombre Product</a>
 					<a>$000</a>
-				</div>
-				<div class="productCont">
-					<div class="productPhoto"></div>
-					<hr class="productHr"></hr>
-					<a>Nombre Product</a>
-					<a>$000</a>
-				</div>
+				</div>	
 			</div>
 		</div>
 	</body>
