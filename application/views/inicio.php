@@ -1,7 +1,6 @@
 <?php
 include("db.php");
 defined('BASEPATH') OR exit('No direct script access allowed');
-include("db.php");
 ?>
 <!DOCTYPE html>
 <html lang="en">

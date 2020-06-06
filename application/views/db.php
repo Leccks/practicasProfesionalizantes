@@ -12,5 +12,7 @@ if($envio->num_rows == 0){
   $query = "create table productos(id integer NOT NULL AUTO_INCREMENT, nombre varchar(40),descripcion varchar(150),
     precio float,stock int(4),PRIMARY KEY(id))";
   $dataCon->query($query);
+}else{
+  $dataCon = new mysqli("localhost","root","","practicas");
 }
 ?>
