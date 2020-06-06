@@ -1,7 +1,7 @@
 <?php
 include("db.php");
+include("funciones.php");
 defined('BASEPATH') OR exit('No direct script access allowed');
-include("db.php");
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -81,48 +81,7 @@ include("db.php");
 			<div class="carousel">
 			</div>
 			<div class="cont2">
-				<div class="productCont">
-					<div class="productPhoto"></div>
-					<hr class="productHr"></hr>
-					<a>Nombre Product</a>
-					<a>$000</a>
-				</div>
-				<div class="productCont">
-					<div class="productPhoto"></div>
-					<hr class="productHr"></hr>
-					<a>Nombre Product</a>
-					<a>$000</a>
-				</div>
-				<div class="productCont">
-					<div class="productPhoto"></div>
-					<hr class="productHr"></hr>
-					<a>Nombre Product</a>
-					<a>$000</a>
-				</div>
-				<div class="productCont">
-					<div class="productPhoto"></div>
-					<hr class="productHr"></hr>
-					<a>Nombre Product</a>
-					<a>$000</a>
-				</div>
-				<div class="productCont">
-					<div class="productPhoto"></div>
-					<hr class="productHr"></hr>
-					<a>Nombre Product</a>
-					<a>$000</a>
-				</div>
-				<div class="productCont">
-					<div class="productPhoto"></div>
-					<hr class="productHr"></hr>
-					<a>Nombre Product</a>
-					<a>$000</a>
-				</div>
-				<div class="productCont">
-					<div class="productPhoto"></div>
-					<hr class="productHr"></hr>
-					<a>Nombre Product</a>
-					<a>$000</a>
-				</div>	
+				<?php selectProd($dataCon); ?>
 			</div>
 		</div>
 	</body>
