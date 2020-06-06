@@ -14,5 +14,9 @@ function url(){
             'title' => 'Productos_controller',
             'url' => base_url('index.php/Productos_controller'), 
         ),
+        array(
+            'title' => 'Register_controller',
+            'url' => base_url('index.php/Register_controller'),
+        )
     );
 }

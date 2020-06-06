@@ -82,16 +82,17 @@
 <body style="background-color: #383838;">
     <div class="container1">
         <div id="container2">
-            <form>    
-                <input type="text" placeholder="Ingrese el email o dni">
-                <input type="password" placeholder="Ingrese la contraseña">
+            <form action="Register_controller/create" method="POST">    
+                <input type="text" placeholder="Ingrese el nombre" name="name">
+                <input type="text" placeholder="Ingrese el mail" name="mail">
+                <input type="password" placeholder="Ingrese la contraseña" name="pass">
                 <button type="submit">Enviar</button>
             </form>
         </div>
         
         <div id="container3">
             <div class="registro_foot">
-                <a href="<?php echo $url[3]['url']; ?>">¿No tiene una cuenta? Registrese dando click aqui</a>
+                <h1>¿Ya tiene una cuenta? Ingrese dando click aqui</h1>
             </div>
         </div>
     </div>
