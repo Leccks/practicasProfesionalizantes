@@ -7,7 +7,7 @@
             echo "<div class='productPhoto'></div>";
             echo "<hr class='productHr'></hr>";
             echo "<a>".$row['nombre']."</a>";
-            echo "<a>".$row['precio']."</a>";
+            echo "<a>$".$row['precio']."</a>";
             echo "</div>";
         }
     }
