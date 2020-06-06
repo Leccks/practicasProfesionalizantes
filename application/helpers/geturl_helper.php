@@ -14,5 +14,10 @@ function url(){
             'title' => 'Productos_controller',
             'url' => base_url('index.php/Productos_controller'), 
         ),
+
+        array(
+            'title' => 'Ayuda_controller',
+            'url' => base_url('index.php/Ayuda_controller'),
+        )
     );
 }
