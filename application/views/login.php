@@ -82,9 +82,9 @@
 <body style="background-color: #383838;">
     <div class="container1">
         <div id="container2">
-            <form>    
-                <input type="text" placeholder="Ingrese el email o dni">
-                <input type="password" placeholder="Ingrese la contraseña">
+            <form method="post" action="Login_controller/validate">    
+                <input type="text" placeholder="Ingrese el email o dni" name="mail">
+                <input type="password" placeholder="Ingrese la contraseña" name="password">
                 <button type="submit">Enviar</button>
             </form>
         </div>
