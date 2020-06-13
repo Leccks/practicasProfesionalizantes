@@ -7,6 +7,12 @@
     <title>Login</title>
     
     <style>
+
+        @font-face {
+        font-family: 'Product Sans Thin Regular';
+        src: local('Product Sans Thin Regular'), url('ProductSans-Thin.woff') format('woff');
+        }
+
         html,body {
             height: 100%;
         }
@@ -19,6 +25,7 @@
         body{
             display: flex;
             flex-direction: column;
+            font-family:'arial';
         }
         .container1{
             width: 100%;
@@ -65,21 +72,87 @@
             flex-direction: column;
             align-items: center;
         }
-        input{
-            height:10%;
-            width:75%;
-            font-size: 0.8vw;
-            padding-left: 1%;
+
+        [type=text],[type=password] {
+            background-color: #f6f6f6;
+            border: none;
+            color: #0d0d0d;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 5px;
+            width: 300%;
+            -webkit-transition: all 0.5s ease-in-out;
+            -moz-transition: all 0.5s ease-in-out;
+            -ms-transition: all 0.5s ease-in-out;
+            -o-transition: all 0.5s ease-in-out;
+            transition: all 0.5s ease-in-out;
+            -webkit-border-radius: 5px 5px 5px 5px;
+            border-radius: 5px 5px 5px 5px;
         }
-        button{
-            height:10%;
-            width:20%;
+
+        [type=submit]{
+            background-color: #f6f6f6;
+            border-radius:10px;
+            border: none;
+            color: #0d0d0d;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 5px;
+            width: 60%; 
         }
+
+
+
+        [type=submit]:hover{
+            background-color: #39ace7;
+        }
+
+        [type=submit]:active{
+            -moz-transform: scale(0.95);
+            -webkit-transform: scale(0.95);
+            -o-transform: scale(0.95);
+            -ms-transform: scale(0.95);
+            transform: scale(0.95);
+        }
+        
+
+        [type=password]:focus{
+            background-color: white;
+            border-bottom: 2px solid #5fbae9;
+        }
+
+        [type=password]:placeholder {
+            color: white;
+        }
+
+        
+        [type=text]:focus {
+            background-color: white;
+            border-bottom: 2px solid #5fbae9;
+        }
+
+      
+        [type=text]:placeholder {
+            color:  white;
+        }
+
+       
+        *:focus {
+            outline: none;
+        }
+                
     </style>
 
 </head>
 
 <body style="background-color: #383838;">
+
     <div class="container1">
         <div id="container2">
             <form>    
@@ -88,7 +161,6 @@
                 <button type="submit">Enviar</button>
             </form>
         </div>
-        
         <div id="container3">
             <div class="registro_foot">
                 <a href="<?php echo $url[3]['url']; ?>">¿No tiene una cuenta? Registrese dando click aqui</a>
