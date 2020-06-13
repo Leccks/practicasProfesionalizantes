@@ -27,7 +27,7 @@ class Login_controller extends CI_Controller {
 
 	public function auth($mail, $pass){
 		$data = $this->db->get_where('usuarios',array('mail' => $mail, 'password' => $pass), 1);
-		if($data->result()){
+		if(!$data->result()){
 			return false;
 		}
 		return $data->result();
