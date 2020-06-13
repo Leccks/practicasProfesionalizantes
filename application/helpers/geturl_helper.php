@@ -17,7 +17,7 @@ function url(){
         array(
             'title' => 'Register_controller',
             'url' => base_url('index.php/Register_controller'),
-
+        ),
         array(
             'title' => 'Ayuda_controller',
             'url' => base_url('index.php/Ayuda_controller'),
