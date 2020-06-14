@@ -155,9 +155,10 @@
 
     <div class="container1">
         <div id="container2">
-            <form method="post" action="Login_controller/validate">    
+            <form method="post" action="Login_controller">    
                 <input type="text" placeholder="Ingrese el email o dni" name="mail">
                 <input type="password" placeholder="Ingrese la contraseña" name="password">
+                <?php if(!$validacion) echo "Datos invalidos. Vuelva a intentarlo."; ?>
                 <button type="submit">Enviar</button>
             </form>
         </div>

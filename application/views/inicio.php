@@ -11,6 +11,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		<link rel="stylesheet" href="./assets/css/inicio.css"> 
 	</head>
 	<body>
+		<a href="http://localhost/practicasProfesionalizantes/index.php/Inicio_controller/cerrar_sesion">cerrar sesion</a>
 		<div class="cont1">
 			<div class="carousel">
 			</div>
@@ -18,6 +19,5 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 				<?php selectProd($dataCon); ?>
 			</div>
 		</div>
-		Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis a odit doloremque incidunt dolorum voluptatem alias reiciendis dolore ad! Nihil optio minima, eligendi excepturi architecto quod modi ratione ullam molestias.
 	</body>
 </html>
