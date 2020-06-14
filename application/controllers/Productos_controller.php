@@ -11,6 +11,7 @@ class Productos_controller extends CI_Controller {
         $data['url'] = url();
         $this->load->view('navbar',$data);
         $this->load->view('productos');
+        $this->load->view('footer',$data);
     }
 
     public function style(){

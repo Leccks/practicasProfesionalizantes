@@ -18,6 +18,5 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 				<?php selectProd($dataCon); ?>
 			</div>
 		</div>
-		Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis a odit doloremque incidunt dolorum voluptatem alias reiciendis dolore ad! Nihil optio minima, eligendi excepturi architecto quod modi ratione ullam molestias.
 	</body>
 </html>
