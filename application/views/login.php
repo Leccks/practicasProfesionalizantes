@@ -235,13 +235,8 @@
         </div>
 
         <div id="container2">
-<<<<<<< HEAD
             <form method="post" action="Login_controller">    
-                <input type="text" placeholder="Ingrese el email o dni" name="mail">
-=======
-            <form method="post" action="Login_controller/validate">    
                 <input type="text" placeholder="Ingrese el email" name="mail">
->>>>>>> 4ffca53f4d3032b88315431c7aa6dafdbec57ffb
                 <input type="password" placeholder="Ingrese la contraseña" name="password">
                 <?php if(!$validacion) echo "Datos invalidos. Vuelva a intentarlo."; ?>
                 <button type="submit">Enviar</button>
