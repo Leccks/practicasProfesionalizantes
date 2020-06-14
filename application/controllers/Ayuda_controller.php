@@ -11,6 +11,7 @@ class Ayuda_controller extends CI_Controller {
         $data['url'] = url();
         $this->load->view('navbar',$data);
         $this->load->view('ayuda');
+        
     }
 
     public function style(){
