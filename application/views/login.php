@@ -2,24 +2,20 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="plantillas/css/login.css">
+    <link rel="stylesheet" href="../assets/css/inicio.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
     
     <style>
-
-        @font-face {
-        font-family: 'Product Sans Thin Regular';
-        src: local('Product Sans Thin Regular'), url('ProductSans-Thin.woff') format('woff');
-        }
 
         html,body {
             height: 100%;
         }
 
         *{
-            margin:0;
-            padding:0;
+            margin:0%;
+            padding:0%;
+            font-family:'Product Sans Regular';
         }
 
         body{
@@ -27,6 +23,7 @@
             flex-direction: column;
             font-family:'arial';
         }
+
         .container1{
             width: 100%;
             height: 90%;
@@ -35,10 +32,13 @@
             justify-content: center;
             align-items: center;
         }
+
         #container2 {
-            background: white;
-            -webkit-box-shadow: 0 30px 60px 0 rgba(0,0,0,0.3);
-            box-shadow: 0 30px 60px 0 rgba(0,0,0,0.3);
+            background: #292929;
+            color:white;
+            -webkit-box-shadow: 0px 1px 8px 5px #242424;
+            -moz-box-shadow: 0px 1px 8px 5px #242424;
+            box-shadow: 0px 1px 8px 5px #242424;
             text-align: center;
             width: 40%;
             height: 26%;
@@ -46,35 +46,41 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
+            
         }
 
         #container3{
-            -webkit-border-radius: 10px 10px 10px 10px;
-            border-radius: 0.5vw 0.5vw 0.5vw 0.5vw;
-            background: white;
-            -webkit-box-shadow: 0 30px 60px 0 rgba(0,0,0,0.3);
-            box-shadow: 0 30px 60px 0 rgba(0,0,0,0.3);
+            -webkit-box-shadow: 0px 1px 8px 5px #242424;
+            -moz-box-shadow: 0px 1px 8px 5px #242424;
+            box-shadow: 0px 1px 8px 5px #242424;
+            color:white;
+            background: #292929;
             width: 40%;
             height: 13%;
             display: flex;
             justify-content: center;
             align-items: center;
             font-size: 0.5vw;
-            margin-top: 2%;
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius:10px;
+            margin-top: 1%;
+            
             
         }
 
         #container4{
-            background: white;
-            -webkit-box-shadow: 0 30px 60px 0 rgba(0,0,0,0.3);
-            box-shadow: 0 30px 60px 0 rgba(0,0,0,0.3);
+            background: #292929;
+            color:white;
+            -webkit-box-shadow: 0px 1px 8px 5px #242424;
+            -moz-box-shadow: 0px 1px 8px 5px #242424;
+            box-shadow: 0px 1px 8px 5px #242424;
             width: 40%;
             height: 10%;
             display: flex;
             justify-content: center;
             align-items: center;
             font-size: 0.5vw;
-            margin-bottom: 10px;
+            margin-bottom: 1%;
             border-top-left-radius: 10px;
             border-top-right-radius:10px;
         }
@@ -91,36 +97,37 @@
         [type=text],[type=password] {
             background-color: #1f1f1f;
             border: none;
-            color: #0d0d0d;
-            padding: 15px 32px;
+            color: white;
+            padding: 7% 10%;
             text-align: center;
             text-decoration: none;
             display: inline-block;
-            font-size: 16px;
-            margin: 5px;
+            font-size: 80%;
+            margin: 2%;
             width: 300%;
             -webkit-transition: all 0.5s ease-in-out;
             -moz-transition: all 0.5s ease-in-out;
             -ms-transition: all 0.5s ease-in-out;
             -o-transition: all 0.5s ease-in-out;
             transition: all 0.5s ease-in-out;
-            -webkit-border-radius: 5px 5px 5px 5px;
-            border-radius: 5px 5px 5px 5px;
+            -webkit-border-radius: 10px;
+            border-radius: 10px;
         }
 
         [type=submit]{
             background-color: #1f1f1f;
             border-radius:10px;
             border: none;
-            color: #0d0d0d;
-            padding: 15px 32px;
+            color: white;
+            padding: 7% 10%;
+            display: inline-block;
             text-align: center;
             text-decoration: none;
-            display: inline-block;
-            font-size: 16px;
-            margin: 5px;
+            font-size: 90%;
+            margin: 2%;
             width: 60%; 
             cursor:pointer;
+            transition: all 1s ease;
         }
 
         [type=submit]:hover{
@@ -137,7 +144,7 @@
         
 
         [type=password]:focus{
-            background-color: white;
+            background-color: #292929;
             border-bottom: 2px solid #5fbae9;
         }
 
@@ -147,7 +154,7 @@
 
         
         [type=text]:focus {
-            background-color: white;
+            background-color: #292929;
             border-bottom: 2px solid #5fbae9;
         }
 
@@ -155,41 +162,20 @@
         [type=text]:placeholder {
             color:  white;
         }
-
        
         *:focus {
             outline: none;
         }
 
-        .boton_l {
-            font-family: arial;
-            background:#85ff87;
-            color: #1d1d1d;
-            cursor: pointer;
-            font-size: 2em;
-            padding: 1px;
-            border: 0;
-            border-radius: 5px;
-            width: auto;
-            position: relative;
-            width:170px;
-            height:40px;
-            right:240px;
-        }
-
-        .texto{
-            position:relative;
-            right:240;
-        }
-
         #formFooter {
-            background-color: #f6f6f6;
-            border-top: 1px solid #dce8f1;
-            padding: 25px;
+            background-color: #1f1f1f;
+            color:white;
+            padding: 1.32%;
             text-align: center;
-            -webkit-border-radius: 0 0 10px 10px;
-            border-radius: 0 0 10px 10px;
-            width: 37.4%;
+            -webkit-box-shadow: 0px 3px 8px 4px  #242424;
+            -moz-box-shadow: 0px 3px 8px 4px  #242424;
+            box-shadow: 0px 3px 8px 4px  #242424;
+            width: 37.5%;
             height: 2%;
         }
 
@@ -199,41 +185,58 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
+            color:white;
+            font-size:90%;
         }
 
         .contraseñaBox:after {
-            display: block;
             left: 0;
             bottom: -10px;
             width: 0;
             height: 2px;
             background-color: #56baed;
             content: "";
-            transition: width 0.4s;  
+            transition: width 0.4s;
+            
         }
 
         .contraseñaBox:hover {
-            color: #0d0d0d;
+            color: #56baed;
         }
 
         .contraseñaBox:hover:after{
-            margin-top:4px;
-            width: 27%;
+            margin-top:1%;
+            width: 30%;
         }
-    
+
+        .welcome{
+            text-align:center;
+            font-size:100%;
+        }
+        
+        .send{
+            width:auto;
+            height:auto;
+            background-color:#14c700;
+            transition: all 1s ease;   
+            font-size:160%;
+            position:relative;
+            left:8%;
+        }
+
     </style>
 
 </head>
 
 <body style="background-color: #383838;">
-
+    
     <div class="container1">
         <div id="container4">
             <div class=welcome>
-                <h1>BIENVENIDO, INGRESE SUS DATOS PARA LOGUEARSE</h1>
+                <h1>Bienvenido</h1>
             </div>
         </div>
-
+        
         <div id="container2">
             <form method="post" action="Login_controller">    
                 <input type="text" placeholder="Ingrese el email" name="mail">
@@ -248,10 +251,10 @@
         </div>
 
         <div id="container3">
-            <div class="registro_foot">
-                <div class="texto"><h1>Registrarse como usuario</h1></div>
+            <div id="container5">
+                <h1>Registrarse como usuario</h1>
                 <br>
-                <input type="submit" class="boton_l">
+                <button type="submit" class="send" >Crear nueva cuenta</button>
             </div>
         </div>
     </div>
