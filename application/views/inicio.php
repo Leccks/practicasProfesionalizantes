@@ -11,7 +11,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		<link rel="stylesheet" href="./assets/css/inicio.css"> 
 	</head>
 	<body>
-		<a href="http://localhost/practicasProfesionalizantes/index.php/Inicio_controller/cerrar_sesion">cerrar sesion</a>
+		<a style="color: white;"><?php var_dump($_SESSION)?></a>
 		<div class="cont1">
 			<div class="carousel">
 			</div>

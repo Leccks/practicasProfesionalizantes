@@ -22,9 +22,6 @@ class Inicio_controller extends CI_Controller {
 	public function __construct(){
 		parent::__construct();
 		$this->load->helper(array('geturl','url'));
-		if(isset($_SESSION['mail'])){
-			echo "AAAAAAA";
-		}
 	}
 
 	public function index(){	
@@ -34,7 +31,7 @@ class Inicio_controller extends CI_Controller {
 	}
 
 	public function cerrar_sesion(){
-		echo "000000000";
+		session_start();
 		session_destroy();
 		redirect($data['url'][0]['url']);
 	}
