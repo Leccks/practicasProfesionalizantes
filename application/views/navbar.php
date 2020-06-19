@@ -1,5 +1,5 @@
 <?php
-if(empty($_SESSION['userdata']) && empty($_SESSION['pass'])){
+if(empty($_SESSION['mail']) || empty($_SESSION['pass'])){
     $position1 = '<a href="'.$url[1]["url"].'">Iniciar Sesión</a>';
     $position2 = '<br><a href="'.$url[3]["url"].'">Crear cuenta</a>';
 }else{

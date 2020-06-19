@@ -31,8 +31,9 @@ class Inicio_controller extends CI_Controller {
 	}
 
 	public function cerrar_sesion(){
-		session_start();
+		echo "CERRAAAAAAAAAR";
 		session_destroy();
+		$this->session->set_userdata(array('mail' => '', 'pass' => ''));
 		redirect($data['url'][0]['url']);
 	}
 
