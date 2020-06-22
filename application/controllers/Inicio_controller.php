@@ -21,6 +21,7 @@ class Inicio_controller extends CI_Controller {
 
 	public function __construct(){
 		parent::__construct();
+		
 		$this->load->helper(array('geturl','url'));
 	}
 
@@ -32,9 +33,9 @@ class Inicio_controller extends CI_Controller {
 
 	public function cerrar_sesion(){
 		echo "CERRAAAAAAAAAR";
-		session_destroy();
 		$this->session->set_userdata(array('mail' => '', 'pass' => ''));
 		redirect($data['url'][0]['url']);
+		session_destroy();
 	}
 
 }

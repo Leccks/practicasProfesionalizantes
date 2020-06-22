@@ -45,8 +45,7 @@
             display: flex;
             flex-direction: column;
             justify-content: center;
-            align-items: center;
-            
+            align-items: center; 
         }
 
         #container3{
@@ -114,7 +113,33 @@
             border-radius: 10px;
         }
 
-        [type=submit]{
+        [type=text]:hover{
+            color:#39ace7;
+            -moz-transform: scale(0.92);
+            -webkit-transform: scale(0.92);
+            -o-transform: scale(0.92);
+            -ms-transform: scale(0.92);
+            transform: scale(0.92);
+        }
+
+        [type=password]:hover{
+            color:#39ace7;
+            -moz-transform: scale(0.92);
+            -webkit-transform: scale(0.92);
+            -o-transform: scale(0.92);
+            -ms-transform: scale(0.92);
+            transform: scale(0.92);
+        }
+
+        [type=text]:active{
+            color:white;
+        }
+
+        [type=password]:active{
+            color:white;
+        }
+
+        [type=submit], [type=buttom]{
             background-color: #1f1f1f;
             border-radius:10px;
             border: none;
@@ -132,17 +157,33 @@
 
         [type=submit]:hover{
             background-color: #39ace7;
+            -moz-transform: scale(0.85);
+            -webkit-transform: scale(0.85);
+            -o-transform: scale(0.85);
+            -ms-transform: scale(0.85);
+            transform: scale(0.85);
+            
+        }
+
+        [type=buttom]:hover{
+            background-color: #39ace7;
+            -moz-transform: scale(0.85);
+            -webkit-transform: scale(0.85);
+            -o-transform: scale(0.85);
+            -ms-transform: scale(0.85);
+            transform: scale(0.85);
         }
 
         [type=submit]:active{
-            -moz-transform: scale(0.95);
-            -webkit-transform: scale(0.95);
-            -o-transform: scale(0.95);
-            -ms-transform: scale(0.95);
-            transform: scale(0.95);
+            background-color: #1f1f1f;
+            transition: all 0.3s ease;
+        }
+
+        [type=buttom]:active{
+            background-color: #14c700;
+            transition: all 0.3s ease;
         }
         
-
         [type=password]:focus{
             background-color: #292929;
             border-bottom: 2px solid #5fbae9;
@@ -205,7 +246,6 @@
         }
 
         .contraseñaBox:hover:after{
-            margin-top:1%;
             width: 30%;
         }
 
@@ -239,22 +279,22 @@
         
         <div id="container2">
             <form method="post" action="Login_controller">    
-                <input type="text" placeholder="Ingrese el email" name="mail">
-                <input type="password" placeholder="Ingrese la contraseña" name="password">
+                <input type="text" placeholder="Ingrese el email" name="mail" required>
+                <input type="password" placeholder="Ingrese la contraseña" name="password" required>
                 <?php if(!$validacion) echo "Datos invalidos. Vuelva a intentarlo."; ?>
                 <button type="submit">Enviar</button>
             </form>
         </div>
 
         <div id="formFooter">
-            <a class="contraseñaBox" href="#">¿Olvidaste la contraseña?</a>
+            <a class="contraseñaBox" href="">¿Olvidaste la contraseña?</a>
         </div>
 
         <div id="container3">
             <div id="container5">
                 <h1>Registrarse como usuario</h1>
                 <br>
-                <button type="submit" class="send" >Crear nueva cuenta</button>
+                <button type="buttom" class="send" >Crear nueva cuenta</button>
             </div>
         </div>
     </div>
