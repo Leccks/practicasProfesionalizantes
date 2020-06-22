@@ -34,7 +34,7 @@ if(empty($_SESSION['mail']) || empty($_SESSION['pass'])){
         width: 26.66%;
     }
     .h10{
-        height: 10%;
+        height: 100px;
     }
     .h100{
         height: 100%;
@@ -47,23 +47,28 @@ if(empty($_SESSION['mail']) || empty($_SESSION['pass'])){
         display: flex;
         align-items: center;
         justify-content: center;
+        -moz-user-select: -moz-none;
+        -khtml-user-select: none;
+        -webkit-user-select: none;
+        -o-user-select: none;
+        user-select: none;
     }
     .menu-content {
         display: none;
         position: absolute;
         background-color: white;
-        min-width: 160px;
+        min-width: 100%;
         box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
         z-index: 1;
+        margin-top: 36.5%;
     }
-    .menu:hover .menu-content {display: block;}
 </style>
 <navbar class="dflex w100 h10 dirrow lightgrey">
 
     <!--Menú Desplegable!-->
-    <div class="menu h100 w10">
+    <div class="menu h100 w10" onclick="dropmenu()">
         <a>Menu desplegable</a>
-        <div class="menu-content">
+        <div class="menu-content" id="menu-content">
             <?php
                 echo $position1;
                 echo $position2;
@@ -76,3 +81,13 @@ if(empty($_SESSION['mail']) || empty($_SESSION['pass'])){
     <a href="<?php echo $url[4]['url']; ?>" class="h100 dflex w2666 center">Ayuda</a>
     <button class="h100 dflex w10 center">Carrito</button>
 </navbar>
+
+<script>
+    function dropmenu(){
+        if(document.getElementById("menu-content").style.display == "block"){
+            document.getElementById("menu-content").style.display = "none";
+        }else{
+            document.getElementById("menu-content").style.display = "block";
+        }
+    }
+</script>
